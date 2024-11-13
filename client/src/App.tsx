@@ -1,9 +1,9 @@
 //rfc
 import { BrowserRouter,Routes,Route } from "react-router-dom";
-import Home from "./pages/Home";
-import Resorts from "./pages/Resorts";
-import Forum from "./pages/Forum";
-import Header from "./components/Header";
+import Home from "./pages/home/home";
+import Resorts from "./pages/resorts/resorts";
+import Forum from "./pages/forum/forum";
+import Header from "./components/Header/header";
 const App=()=> {
     return(
       <BrowserRouter>

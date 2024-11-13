@@ -1,4 +1,4 @@
-import { Dictionary } from "../dictionaries/en";
+import { Dictionary } from "../../dictionaries/en";
 
 const Home = () => {
   return <div>{Dictionary.Home}</div>;

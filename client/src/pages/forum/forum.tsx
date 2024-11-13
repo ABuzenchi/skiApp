@@ -1,4 +1,4 @@
-import { Dictionary } from "../dictionaries/en";
+import { Dictionary } from "../../dictionaries/en";
 
 const Forum = () => {
   return <div>{Dictionary.Forum}</div>;
