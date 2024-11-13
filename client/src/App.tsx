@@ -38,10 +38,6 @@ const App = () => {
     // Învelește întreaga aplicație cu MantineProvider
     <MantineProvider theme={{ colorScheme:mode}}>
       <div className="App">
-        <header className="App-header">
-          <p>
-            This is an example of dark/light mode using ReactJs !!
-          </p>
           <div>
             {
               mode === 'dark' ? (
@@ -51,7 +47,6 @@ const App = () => {
               )
             }
           </div>
-        </header>
       </div>
 
       <BrowserRouter>
