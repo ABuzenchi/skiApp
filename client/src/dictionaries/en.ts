@@ -3,4 +3,5 @@ export const Dictionary = {
     Home:"Home",
     Resorts:"Resorts",
     Forum:"Forum",
+    UserProfile:"User Profile"
 }
