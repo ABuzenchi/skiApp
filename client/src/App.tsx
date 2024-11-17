@@ -3,8 +3,9 @@ import { MantineProvider } from "@mantine/core"; // Importă MantineProvider
 import Home from "./pages/home/home";
 import Resorts from "./pages/resorts/resorts";
 import Forum from "./pages/forum/forum";
-import Header from "./components/header/header";
 import { useEffect, useState } from "react";
+import Header from "./components/Header/header";
+import UserProfile from "./pages/user-profile/user-profile";
 
 const App = () => {
   const [mode, setMode] = useState<"light" | "dark">("light");
@@ -44,6 +45,7 @@ const App = () => {
           <Route path="/" element={<Home />} />
           <Route path="/resorts" element={<Resorts />} />
           <Route path="/forum" element={<Forum />} />
+          <Route path="/user-profile" element={<UserProfile/>}/>
         </Routes>
       </BrowserRouter>
     </MantineProvider>

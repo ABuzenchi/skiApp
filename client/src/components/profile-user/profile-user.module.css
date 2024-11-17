@@ -1,8 +1,0 @@
-.drawer {
-    position: absolute !important;  /* Asigură că drawer-ul va rămâne la dreapta */
-    right: 0;  /* Aliniază la dreapta */
-    top: 0;    /* Asigură-te că se deschide din partea de sus */
-    bottom: 0; /* Se extinde până jos */
-    background-color: aqua;
-  
-  }

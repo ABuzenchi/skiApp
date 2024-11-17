@@ -1,13 +1,12 @@
 import classes from "./header.module.css";
 import alpineSkiingLight from "../../assets/alpine-skiing-light.png";
-import { IoSunny } from "react-icons/io5";
-import { Button, Image } from "@mantine/core";
-import { IoMoon } from "react-icons/io5";
+import { Button,Image } from "@mantine/core";
 import { AiFillHome } from "react-icons/ai";
 import { FaMap } from "react-icons/fa";
 import { MdForum } from "react-icons/md";
-import ProfileUser from "../profile-user/profile-user";
-import Demo from "../profile-user/profile-user";
+import { IoMoon, IoSunny } from "react-icons/io5";
+import { FaCircleUser } from "react-icons/fa6";
+
 
 interface HeaderProps {
   mode: "light" | "dark";
@@ -33,6 +32,11 @@ const Header = ({ mode, onSelectMode }: HeaderProps) => {
         <MdForum />
         Forum
       </Button>
+
+      <Button component="a" href="/user-profile" size="lg">
+        <FaCircleUser />
+       User Profile
+      </Button>
       <div>
         {mode === "dark" ? (
           <Button onClick={() => onSelectMode("light")}>
@@ -44,7 +48,6 @@ const Header = ({ mode, onSelectMode }: HeaderProps) => {
           </Button>
         )}
       </div>
-      <Demo />
     </div>
   );
 };
