@@ -64,3 +64,14 @@
     justify-content: center; 
   }
 }
+
+.navBar a {
+  color: var(--text-color); /* Utilizează culoarea textului definită pentru tema activă */
+  text-decoration: none; /* Elimină sublinierea */
+  font-weight: 500; /* Ajustează grosimea fontului dacă este necesar */
+}
+
+.navBar a:hover {
+  color: var(--button-hover); /* Schimbă culoarea la hover */
+  text-decoration: underline; /* Adaugă o subliniere la hover (opțional) */
+}
